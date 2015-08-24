@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Intro to HTML</title>
+
+        <meta name="description" content="An introduction to HTML at the Open Window.">
+        <meta name="author" content="Willem Labu">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1>Intro to HTML</h1>
+                    <h3>Week 1</h3>
+                    <p>
+                        <small><a href="http://pwl.co.za">Willem Labu</a> / <a href="http://twitter.com/willemlabu">@willemlabu</a></small>
+                    </p>
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>This class</h2>
+                        <ul>
+                            <li>What is HTML?</li>
+                            <li>Where does it fit in?</li>
+                            <li>What you need to run HTML</li>
+                            <li>Beginner Basics</li>
+                            <li>Vocabulary &amp; Specification</li>
+                            <li>Semantics</li>
+                            <li>Git &amp; Github.com</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Coming up</h2>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Document Object Model</li>
+                            <li>Boilerplates</li>
+                            <li>Front-end frameworks</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Then, the deep stuff</h2>
+                        <ul>
+                            <li>URLs &amp; Special Characters</li>
+                            <li>Responsive Web Development</li>
+                            <li>Designing in the browser</li>
+                        </ul>
+                    </section>
+                
+                </section>
+
+                <section>
+                    
+                    <section>
+                        <h1>What is HTML?</h1>
+                    </section>
+
+                    <section>
+                        <h3><u>H</u>yper<u>T</u>ext <u>M</u>arkup <u>L</u>anguage</h3>
+                    </section>
+
+                    <section>
+                        <p>It's the language of <strong>web pages</strong>.</p>
+                        <p>It consists of a bunch of <strong>tags</strong>.</p>
+                        <p>It <strong>describes</strong> content.</p>
+                        <p>It <strong>is not</strong> the content.</p>
+                    </section>
+
+                    <section>
+                        <h1>HTML <u>is not</u> the content.</h1>
+                    </section>
+
+                    <section>
+                        <p>Content is what goes between the HTML tags.</p>
+                    </section>
+
+                    <section>
+                        <h2>Where exactly HTML fits</h2>
+                    </section>
+
+                    <section>
+                        <h2>How web servers work</h2>
+                        <img src="http://s.hswstatic.com/gif/webserver-basic-sm.gif" />
+                    </section>
+
+                    <section>
+                        <p>HTML is <b>hosted on the server</b>, and is sent by the server as the response.</p>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>Things you need</h2>
+                        <ul>
+                            <li>Text Editor</li>
+                            <li>Browser</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Text Editors</h2>
+                        <ul>
+                            <li>Sublime Text</li>
+                            <li>Notepad++</li>
+                            <li>Atom</li>
+                            <li>vi</li>
+                            <li>emacs</li>
+                            <li>Coda</li>
+                            <li>TextMate</li>
+                            <li>TextWrangler</li>
+                            <li>Notepad</li>
+                            <li>DreamWeaver</li>
+                            <li>Visual Studio</li>
+                            <li>XCode</li>
+                            <li>UltraEdit</li>
+                            <li>Most browsers</li>
+                            <li>Word</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Browsers</h2>
+                        <ul>
+                            <li>Chrome</li>
+                            <li>Firefox</li>
+                            <li>Safari</li>
+                            <li>MS Edge</li>
+                            <li>MS IE</li>
+                            <li>Tor fork of FF</li>
+                            <li>SeaMonkey</li>
+                            <li>Opera</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>To serve a site online!</h2>
+                        <ul>
+                            <li>Text Editor</li>
+                            <li>Browser</li>
+                            <li>A website + domain</li>
+                            <li class="fragment">HTML Web Pages</li>
+                            <li class="fragment">Web server <span class="fragment">(Apache, IIS, nginx, <a href="http://en.wikipedia.org/wiki/Comparison_of_web_server_software" target="_blank">etc</a>.)</span></li>
+                            <li class="fragment">?</li>
+                            <li class="fragment">Profit!</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Packaged Solutions</h2>
+                        <p><b>A</b>pache / <b>M</b>ySQL / <b>P</b>HP / <b>P</b>erl / <b>S</b>oftaculous</p>
+                        <ul>
+                            <li><a href="https://www.apachefriends.org/" target="_blank">XAMPP</a></li>
+                            <li><a href="http://www.ampps.com/" target="_blank">AMPPS</a></li>
+                            <li><a href="http://www.wampserver.com/en/" target="_blank">WAMPP</a> (Win)</li>
+                        </ul>
+                        <p><small>Open source is <em>awesome!</em></small></p>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h1>Let's go!</h1>
+                        <code>the basics of &lt;html&gt; code</code>
+                    </section>
+
+                    <section>
+                        <h3>File Extension!</h3>
+                        <h1 class="fragment">.htm</h1>
+                        <h1 class="fragment">.html</h1>
+                    </section>
+
+                    <section>
+                        <h2>The Very Least</h2>
+<pre><code>
+  &lt;html&gt;
+
+    &lt;!-- Content goes here --&gt;
+
+  &lt;/html&gt;
+
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Better</h2>
+<pre><code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;Awesome title!&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+      &lt;!-- Content goes here --&gt;
+
+    &lt;/body&gt;
+  &lt;/html&gt;
+
+</code></pre>
+                        <p>Filename: <a class="fragment" href="../examples/index.html" target="_blank">index.html</a></p>
+                    </section>
+
+                    <section>
+                        <h2>Best (imho)</h2>
+<pre><code>
+  &lt;!doctype html&gt;
+  &lt;html class="no-js" lang="en"&gt;
+    &lt;head&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;
+      &lt;title&gt;Awesome title&lt;/title&gt;
+      &lt;meta name="description" content="Awesome description"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+
+      &lt;link rel="apple-touch-icon" href="apple-touch-icon.png"&gt;
+      &lt;!-- Place favicon.ico in the root directory --&gt;
+
+      &lt;link rel="stylesheet" href="css/normalize.css"&gt;
+      &lt;link rel="stylesheet" href="css/main.css"&gt;
+      &lt;script src="js/vendor/modernizr-2.8.3.min.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;!--[if lt IE 8]&gt;
+        &lt;p class="browserupgrade"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;
+      &lt;![endif]--&gt;
+
+      &lt;!-- Content goes here --&gt;
+      &lt;p&gt;Hello world! This is HTML5 Boilerplate.&lt;/p&gt;
+
+      &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;
+      &lt;script&gt;window.jQuery || document.write('&lt;script src="js/vendor/jquery-1.11.3.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;
+      &lt;script src="js/plugins.js"&gt;&lt;/script&gt;
+      &lt;script src="js/main.js"&gt;&lt;/script&gt;
+
+    &lt;/body&gt;
+  &lt;/html&gt;
+
+</code></pre>
+                        <p>ZIP: <a href="../examples/html5-boilerplate_v5.2.0.zip" target="_blank">HTML5 Boilerplate</a></p>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h1>Basic Vocabulary</h1>
+                    </section>
+
+                    <section>
+                        <h3>So far</h3>
+<pre><code>
+  &lt;html&gt;
+
+  &lt;head&gt;
+
+  &lt;title&gt;
+
+  &lt;meta&gt;
+
+  &lt;link&gt;
+
+  &lt;body&gt;
+
+  &lt;p&gt;
+
+  &lt;script&gt;
+
+  &lt;!-- Comment --&gt;
+
+</code></pre>
+                        
+                    </section>
+
+                    <section>
+                        <h3>The HTML5 Specification</h3>
+                        <p><a href="http://www.w3.org/TR/html5/">http://www.w3.org/TR/html5/</a></p>
+                    </section>
+
+                    <section>
+                        <h3>Block Elements</h3>
+<pre><code>
+  &lt;div&gt;
+
+  &lt;header&gt;
+
+  &lt;nav&gt;
+
+  &lt;footer&gt;
+
+  &lt;section&gt;
+
+  &lt;article&gt;
+
+  &lt;main&gt;
+
+  &lt;aside&gt;
+
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Lists Elements</h3>
+<pre><code>
+  &lt;ul&gt; &lt;-- Unordered List --&gt;
+
+  &lt;ol&gt; &lt;-- Ordered List --&gt;
+
+  &lt;li&gt; &lt;-- List Item --&gt;
+
+  --
+
+  &lt;dl&gt; &lt;-- Definition List --&gt;
+
+  &lt;dt&gt; &lt;-- Definition Term --&gt;
+
+  &lt;dd&gt; &lt;-- Definition Data --&gt;
+
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Inline Elements</h3>
+<pre><code>
+  &lt;a&gt;
+
+  &lt;em&gt;
+
+  &lt;strong&gt;
+
+  &lt;small&gt;
+
+  &lt;span&gt;
+
+  &lt;i&gt;
+
+  &lt;b&gt;
+
+  &lt;u&gt;
+
+  &lt;sup&gt;
+
+  &lt;sub&gt;
+
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Special Content Elements</h3>
+<pre><code>
+  &lt;img&gt;
+
+  &lt;iframe&gt;
+
+  &lt;embed&gt;
+
+  &lt;object&gt;
+
+  &lt;param&gt;
+
+  &lt;video&gt;
+
+  &lt;audio&gt;
+
+  &lt;map&gt;
+
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Tables</h3>
+<pre><code>
+  &lt;table&gt;
+
+  &lt;tr&gt;
+
+  &lt;th&gt;
+
+  &lt;td&gt;
+
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Forms</h3>
+<pre><code>
+  &lt;form&gt;
+
+  &lt;label&gt;
+
+  &lt;input&gt;
+
+  &lt;button&gt;
+
+  &lt;select&gt;
+
+  &lt;textarea&gt;
+
+</code></pre>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h1>Basic Rules</h1>
+                        <p>How to do <em>stuff</em> with HTML</p>
+                    </section>
+
+                    <section>
+                        <h3>Describe the content</h3>
+<pre><code class="html">
+  &lt;p&gt;
+    This is a paragraph of text, wrapped in "p" tags, which means
+    this is.. a paragraph, or a sentence of text that is human-
+    (and, importantly, machine-) readable!
+  &lt;/p&gt;
+
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Blocks go in blocks</h3>
+<pre><code class="html">
+  &lt;header&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;All &lt;hx /&gt; tags are blocks elements!&lt;/p&gt;
+  &lt;/header&gt;
+
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>Inline tags go in blocks</h3>
+<pre><code class="html">
+  &lt;article&gt;
+    &lt;h1&gt;Hacker News&lt;/h1&gt;
+    &lt;p&gt;All &lt;a href="https://news.ycombinator.com/"&gt;the freshest news&lt;/a&gt;
+       for your face!&lt;/p&gt;
+  &lt;/article&gt;
+
+</code></pre>
+
+                        <p>Example: <a href="../examples/hacker-news.html" target="_blank">Click here!</a></p>
+                    </section>
+
+                    <section>
+                        <h3>Block tags <b>do not</b> go inside inline elements</h3>
+<pre><code class="html">
+  &lt;a href="https://news.ycombinator.com/"&gt;
+    &lt;h1&gt;Hacker News&lt;/h1&gt;
+    &lt;p&gt;All the freshest news for your face!&lt;/p&gt;
+  &lt;/a&gt;
+
+</code></pre>
+
+                        <p>Please, don't do this.</p>
+                    </section>
+
+                    <section>
+                        <h3>Close nested elements</h3>
+<pre><code class="html">
+  &lt;p&gt;This is a properly &lt;/b&gt;bolded&lt;/b&gt; word!&lt;/p&gt;
+
+  &lt;p&gt;This one, not so &lt;/b&gt;much&lt;/p&gt;.&lt;/b&gt;
+
+</code></pre>
+
+                    </section>
+
+                </section>
+
+                <section>
+                    
+                    <section>
+                        <h1>Why?</h1>
+                        <p>Why do we have things that <em>describe</em> what content it contains?</p>
+                    </section>
+
+                    <section>
+                        <h2>Readability</h2>
+                        <p>&amp;</p>
+                        <h2>Findability</h2>
+                    </section>
+
+                    <section>
+                        <h2>Semantics</h2>
+                        <p><small>(from Ancient Greek: σημαντικός sēmantikós, "significant") is <b>the study of meaning</b>.</small></p>
+                        <p>It focuses on the relation between signifiers, like words, phrases, signs, and symbols, and what they stand for; their denotation.</p>
+                    </section>
+
+                    <section>
+                        <h2>Not just humans</h2>
+                        <p>Websites are not just read by humans. Much more often, in fact, will they be "read" by machines.</p>
+                        <p>Your browser needs to parse the HTML before it will be rendered and displayed.</p>
+                        <p>Search Engine Crawlers will read sites a few times a week (or even multiple times a day) to index content.</p>
+                    </section>
+
+                    <section>
+                        <h2>Semantic code is clean</h2>
+                        <p>More often than not, you will be rewriting, or even copying code.</p>
+                        <p>Clean code is easy to maintain and update.</p>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h1>Git</h1>
+                        <h3><em>Super</em>&nbsp; Easy Version Control</h3>
+                        <p><small>Why you shouldn't be scared of your console</small></p>
+                    </section>
+
+                    <section>
+                        <h2>What is Git?</h2>
+                        <p>It's a Version Control System.</p>
+                        <p><b>Never lose work again!</b> Save <em>every</em> file, and <em>every</em> step along the way, of your <em>entire</em> project.</p>
+                        <p>It allows you to work with other people <b>on the same code</b>, without overwriting each other's work.</p>
+                    </section>
+
+                    <section>
+                        <h2>How does Git work?</h2>
+                        <p>There are three (conceptual) areas in any Git project:</p>
+                        <ul>
+                            <li class="fragment">Repository</li>
+                            <li class="fragment">Working Directory</li>
+                            <li class="fragment">Staging Area</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img src="http://git-scm.com/book/en/v2/book/01-introduction/images/areas.png" />
+                    </section>
+
+                    <section>
+                        <h3>The 4 Basics of Git</h3>
+                        <ol>
+                            <li class="fragment">pull</li>
+                            <li class="fragment">add</li>
+                            <li class="fragment">commit</li>
+                            <li class="fragment">push</li>
+                        </ol>
+                    </section>
+
+                </section>
+
+                <section>
+                    
+                    <h1>How To Git like a pro</h1>
+
+                    <p>Repo URL: <a href="https://github.com/WillemLabu/intro-to-html" target="_blank">https://github.com/WillemLabu/intro-to-html</a></p>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h1>Homework</h1>
+                    </section>
+
+                    <section>
+                        <h3>Task 1</h3>
+                        <p>Create a github profile.</p>
+                        <p>Fork this repo.</p>
+                        <p>Clone the fork to your machine.</p>
+                    </section>
+
+                    <section>
+                        <h3>Task 2</h3>
+                        <p>Complete the task in the <code>homework</code> directory.</p>
+                    </section>
+
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

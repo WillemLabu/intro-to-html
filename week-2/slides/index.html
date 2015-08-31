@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Intro to HTML</title>
+
+        <meta name="description" content="An introduction to HTML at the Open Window.">
+        <meta name="author" content="Willem Labu">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+        <!-- <link rel="stylesheet" href="css/theme/league.css" id="theme"> -->
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h1>Intro to HTML</h1>
+                    <h3>Week 2</h3>
+                    <p>
+                        <small><a href="http://pwl.co.za">Willem Labu</a> / <a href="http://twitter.com/willemlabu">@willemlabu</a></small>
+                    </p>
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>This class</h2>
+                        <ul>
+                            <li>Git catchup</li>
+                            <li>What is HTML5?</li>
+                            <li>CSS</li>
+                            <li>Designing in the browser</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Coming up</h2>
+                        <ul>
+                            <li>Document Object Model</li>
+                            <li>Boilerplates</li>
+                            <li>Front-end frameworks</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>And then!</h2>
+                        <ul>
+                            <li>URLs &amp; Special Characters</li>
+                            <li>Responsive Web Development</li>
+                        </ul>
+                    </section>
+                
+                </section>
+
+                <section>
+                    
+                    <section>
+                        <h4>A review of</h4>
+                        <h1>git</h1>
+                    </section>
+
+                </section>
+
+                <section>
+                
+                    <section>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png" style="padding: 50px; background: #fff" />
+                    </section>
+
+                    <section>
+                        <p>Been around in one form <sup><em>(ha)</em></sup> or another since 2004.</p>
+                        <p>Go read <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a> on Wikipedia.</p>
+                    </section>
+
+                    <section>
+                        <h1>Tags & APIs</h1>
+                        <p class="fragment"><small>Application Programming Interfaces</small></p>
+                    </section>
+
+                    <section>
+                        <p>We spoke about tags last week, but here's a list!</p>
+                        <p><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element">All HTML Tags</a> (a.k.a. Elements)</p>
+                    </section>
+
+                    <section>
+                        <h2>New APIs</h2>
+                    </section>
+
+                    <section>
+                        <ul>
+                          <li>Canvas</li>
+                          <li>Audio</li>
+                          <li>Video</li>
+                          <li>Drag and drop</li>
+                          <li>Editing</li>
+                          <li>History</li>
+                          <li>Microdata</li>
+                          <li>Browser Storage &amp; Databases</li>
+                          <li>Location</li>
+                          <li>data-* Attributes</li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>HTML5 is coupled with</h2>
+                        <ul>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQ_wvuykU5dUfa7hBsK7oWp9pQO19WSuBXDUudEYEXb8QI3hAJB" style="padding: 50px; background: #fff" />
+                    </section>
+
+                    <section>
+                        <p>If HTML describes the content, <br>CSS <strong>describes the look</strong> of the content.</p>
+                        <p>It also needs markup to do anything.</p>
+                    </section>
+
+                    <section>
+                        <h2>Advantages</h2>
+                        <p>Separation of concerns</p>
+                        <p>Single point of failure</p>
+                        <p><em>Cascading</em> styles</p>
+                        <p>Accessibility &amp; Semantics</p>
+                    </section>
+
+                  </section>
+                  
+                  <section>
+
+                    <section>
+                        <h1>CSS Basics</h1>
+                    </section>
+                    
+                    <section>
+<pre><code>
+  SELECTOR { RULES }
+
+</code></pre>
+
+                        <p>The <code>RULES</code> apply to the <code>SELECTOR</code>.</p>
+                    </section>
+
+                    <section>
+                        <h2>CSS Selectors</h2>
+<pre><code>
+  * { } 
+
+  #id { }
+  .class { }
+
+  ul { } 
+  li a { } 
+
+  a[target="_blank"] { }
+
+</code></pre>
+
+                        <p>There are a <a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">whole bunch</a> of these.</p>
+                    </section>
+
+                    <section>
+                        <h2>CSS Rules</h2>
+<pre><code>
+  div {
+
+    color: white;
+    background: #000000; /* Black */
+
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    height: 100px;
+    width: 100%;
+
+  }
+
+</code></pre>
+
+                        <p>There are a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">whole bunch</a> of these, too.</p>
+                    </section>
+
+                    <section>
+                        <h2>CSS Positioning</h2>
+<pre><code>
+  div {
+
+    position: static; /* [absolute, fixed, relative,      initial, inherit] */
+
+    top:    0px;
+    bottom: 0px;
+
+    left:   0px;
+    right:  0px;
+
+  }
+
+</code></pre>
+
+                    </section>
+
+                    <section>
+                      <h3>How positioning works</h3>
+                      <p>All elements are static at first.</p>
+                      <p>Elements are written to the page from top to bottom</p>
+                    </section>
+
+                    <section>
+
+                      <h3>Static elements</h3>
+                      <p>Follow normal page flow.</p>
+                    </section>
+
+                    <section>
+
+                      <h3>Relative elements</h3>
+                      <p>Follow static page flow</p>
+                      <p>Become the new relative box of children</p>
+                    </section>
+
+                    <section>
+
+                      <h3>Absolute elements</h3>
+                      <p>Are removed from page flow</p>
+                      <p>Become the new relative box of children</p>
+
+                    </section>
+
+                    <section>
+
+                      <h2>Floats</h2>
+                      <p>Tricky!</p>
+<pre><code>
+  div { float: none }
+
+  div.pull-left  { float: left }
+  div.pull-right { float: right }
+
+  div.clear-both { clear: both } /* [left, right] */
+
+</code></pre>
+
+                    </section>
+
+                    <section>
+
+                      <h2>Clearfix</h2>
+<pre><code>
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+</code></pre>
+                      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">Pseudo-element selectors</a></p>
+
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h1>Homework</h1>
+                    </section>
+
+                    <section>
+                        <h3>Task 1</h3>
+                        <p>Style your movie site.</p>
+                        <p>We'll review next week, and carry on making it better!</p>
+                    </section>
+
+                    <section>
+                        <h3>Remember</h3>
+                        <p>Keep pushing to git!</p>
+                    </section>
+
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

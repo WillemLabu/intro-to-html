@@ -1,0 +1,38 @@
+* { }
+
+html {}
+
+body { padding: 0 20px; }
+
+
+#shoe {
+	padding: 20px;
+}
+
+
+.laces {
+	font-style: italic;
+	color: blue;
+}
+
+ul {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+li a {
+	color: red;
+} 
+
+a[target="_blank"] {
+	color: orange;
+	padding: 10px;
+	border: 1px dashed #999;
+}

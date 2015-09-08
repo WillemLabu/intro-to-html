@@ -95,14 +95,41 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    padding: 10px;
+    margin: auto;
+    width: 1300px;
+}
+
+article {
+color: saddlebrown;
+}
 
 
+header {
+    background: Black;
+    color:#D29503;
+}
 
+Footer {
+    height: 100px;
+    background: Black;
+    color:#D29503;
+}
 
+    footer p {
+        top: 50%;
+        position: relative;
+        text-align: center;
+    }
 
+    footer a {
+        color: #D29503;
+    }
 
-
-
+    footer a:hover {
+        color: white;
+    }
 
 
 

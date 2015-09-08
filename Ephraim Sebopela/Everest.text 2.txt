@@ -1,0 +1,64 @@
+
+
+<head>
+<meta charset="utf-8">
+<title>Everest</title>
+<style>
+
+</style>
+</head>
+
+<style>
+
+body {
+background-color: #faf2e4;
+margin: 0 15%;
+font-family: sans-serif;
+}
+
+h1 {
+text-align: centre;
+font-family: serif;
+font-weight: normal;
+text-transform: uppercase;
+border-bottom: 1px solid #57b1dc
+margin-top: 30px;
+}
+
+h2 {
+color: #d1633c;
+font-size: 1em;
+}
+
+</style>	
+
+<h1><img src="Everest.png" alt="Everest logo"><br>Everest</h1>
+<p>On the morning of May 10, 1996, climbers (Jason Clarke and Josh Brolin) from two expeditions start their final ascent
+towards the summit of Mount Everest, the highest point on Earth. With little warning, a violent storm strikes the 
+mountain, engulfing the adventurers in one of the fiercest blizzards ever encountered by man.Challenged by the harshest
+conditions imaginable, the teams must endure blistering winds and freezing temperatures in an epic battle to survive 
+nearly against impossible odds.</p>
+
+<pre>Initial release : June 23, 2015 (Barcelona)
+Director	: Baltasar Kormakar
+Running time	: 2h 30m
+Music composed by : Dario Marianelli
+Distributor	: Universal Studios</pre>
+
+<h2>Cast</h2>
+
+<pre>Jake Gyllenhaal (Scott Fischer)
+Keira Knightley (Jan Hall)
+Josh Brolin
+Jason Clarke
+Robin Wright</pre>
+
+<h3>Reviews</h3>
+
+<p>Everest is chalk full of star power. <em>Everyone is believable in this hostile environment,</em><br>going on from optimistic
+and adventurous to mortified and forced to fight for their lives.<br>The visuals are stunning, the shots they get of 
+climbers and the way the camera gives you an idea of how dangerous this is are breath taking.<br>The cinematography 
+is definitely award worthy.</p>
+
+
+ 

@@ -95,10 +95,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
 body {
     padding: 10px;
     margin: auto;
-    width: 1300px;
+    background: url('../img/pageglare.png') no-repeat fixed;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.center-sheet {
+    width:1000px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px  rgba(0, 0, 0, 1);
+    position: relative;
 }
 
 article {
@@ -106,12 +120,30 @@ color: saddlebrown;
 }
 
 
-header {
+main header {
     background: Black;
     color:#D29503;
+    font-size: 45px;
+    text-align: center;
 }
 
-Footer {
+    header h1 {
+        margin: 0 0 20px 0;
+    }
+
+aside header {
+    color:#D29503;
+    font-size: 30px;
+}
+
+
+aside article {
+    border: 1px solid black;
+    margin: 2px;
+    padding: 0 5px;
+}
+
+footer {
     height: 100px;
     background: Black;
     color:#D29503;
@@ -130,13 +162,6 @@ Footer {
     footer a:hover {
         color: white;
     }
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes

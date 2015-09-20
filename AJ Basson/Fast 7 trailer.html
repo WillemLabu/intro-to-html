@@ -6,32 +6,89 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title> FAST &amp; FURIOUS 7 </title>
       <meta name="description" content="Furious 7 is a 2015 American action film directed by James Wan and written by Chris Morgan.">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="main.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <!-- Place favicon.ico in the root directory -->
+
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+
+
+      <link rel="stylesheet" href="css/main.css">
+      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
     <body>    
       <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-      <main>        
+      <div class="container">
+              
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>                  
+                </div>
+                <form class="navbar-form navbar-right" role="search">
+                  <div class="form-group">                    
+                    <div class="navbar-header">                        
+                      <a class="navbar-brand" href="#">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                      </a>
+                    </div>                    
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
         <header>
           <h1>Fast &amp; Furious 7</h1>
           <img src="furious7-furious_rgb.jpg" height="320" />          
-        </header>
-
-        <p> Trailer Goes Here </p>  
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/Skpu5HaVkOc" frameborder="0" allowfullscreen></iframe>
-         </video>
-        
-          
-
-
-        <footer>
-          <h4 style="border-bottom: 1px solid grey; color: grey">External links</h4>
-        </footer>
-      </main>
+        </header>    
+         
+         
+        <div class="clearfix">
+          <div class="col-md-4">Left On Desktop, Top On Mobile</div>
+            <div class="col-md-8">
+              <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.youtube.com/embed/Skpu5HaVkOc" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
 
     </body>
   </html>

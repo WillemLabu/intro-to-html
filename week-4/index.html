@@ -1,0 +1,279 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>How to use Bootstrap</title>
+        <meta name="description" content="A demo of integrating Bootstrap CSS &amp; JavaScript into a project.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+
+            <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+            <div class="visible-sm-block">Only visible on small screens!</div>
+
+            <span class="glyphicon glyphicon-hdd" aria-hidden="true"></span>
+
+            <hr />
+
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Library</a></li>
+              <li class="active">Data</li>
+            </ol>
+
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-default">1</button>
+              <button type="button" class="btn btn-default">2</button>
+
+                <div class="btn-group" role="group">
+                  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li class="dropdown-header">Dropdown header</li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+            
+            </div>
+
+            <div class="alert alert-warning alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4 class="bg-info text-success">Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <p class="text-success">Hello world! This is <span class="h3">HTML5 Boilerplate</span>.</p>
+
+            <div class="clearfix">
+                <div class="col-xs-6">
+                    <ul>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6">
+                    <ol>
+                        <li class="success">List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <div class="clearfix">
+                <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="success">Table cell</th>
+                                    <th>Table cell</th>
+                                    <th>Table cell</th>
+                                    <th>Table cell</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cellasdasdasdasdajhgaskdgaskuygasuky7g1h2akuygasikgasdhasjkdgkg</td>
+                                <td>Table cell</td>
+                            </tr>
+                            <tr>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                            </tr>
+                            <tr>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                            </tr>
+                            <tr>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                            </tr>
+                            <tr>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                            </tr>
+                            <tr>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                            </tr>
+                            <tr>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                                <td>Table cell</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <form>
+                
+                <input class="form-control" type="text" />
+
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    Option one is this and that&mdash;be sure to include why it's great
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                  </label>
+                </div>
+                <div class="radio disabled">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                    Option three is disabled
+                  </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">
+                        Option one is this and that&mdash;be sure to include why it's great
+                    </label>
+                </div>
+
+                <input class="form-control" type="number" />
+
+                <select class="form-control">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </select>
+
+                <input class="form-control" type="color" />
+
+                <button class="btn btn-success btn-block">I'm a button</button>
+
+            </form>
+
+            <a href="#" class="btn btn-default">I'm a link</a>
+
+            <hr />
+
+            <div class="clearfix">
+
+                <div class="col-md-4">on the left when desktop, on the top when mobile</div>
+
+                <div class="col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/8hUps0OVyi4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        
+        <script src="js/vendor/bootstrap.js"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
